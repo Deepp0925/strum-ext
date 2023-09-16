@@ -1,0 +1,17 @@
+[package]
+name = "strum-ext"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+proc-macro = true
+doctest = false
+
+
+[dependencies]
+impls = "1.0.3"
+quote = "1.0.33"
+syn = {version = "2.0.33", features = ["full", "extra-traits"]}
+
+[dev-dependencies]
+trybuild = "1.0.46"
